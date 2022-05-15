@@ -7,7 +7,7 @@
     --dark-blue-btn-color: #21424A;
     --green-btn-color: #2FAC6C;
     --light-gray: rgb(196, 196, 196);
-    --dark-gray: rgb(141, 141, 141);
+    --dark-gray: rgb(129, 129, 129);
     --mobile-section-padding: 1.5rem 2rem;
 }
 
@@ -16,6 +16,7 @@ html {
 }
 
 p {
+    font-size: 1.2rem;
     line-height: 1.4;
 }
 
@@ -71,7 +72,7 @@ main .welcome {
 }
 
 .about-us {
-    padding: 1.5rem 2rem;
+    padding: var(--mobile-section-padding);
     text-align: center;
 }
 
@@ -143,6 +144,51 @@ main .welcome {
 }
 
 .review .review-member {
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 1rem;
+}
+
+.services {
+    padding: var(--mobile-section-padding);
+    text-align: center;
+}
+
+.service .lighting-icon {
+    color: white;
+    background-color: #F1C40F;
+}
+
+.service .cloud-icon {
+    color: white;
+    background-color: #0EA7E6;
+}
+
+.service .arrows-icon {
+    color: white;
+    background-color: #95A5A6;
+}
+
+.service .comments-icon {
+    color: white;
+    background-color: #F1540F;
+}
+
+.service i {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.service .service-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 0.75rem;
+}
+
+.service .service-info {
+    color: var(--dark-gray);
+    margin-bottom: 3rem;
 }
