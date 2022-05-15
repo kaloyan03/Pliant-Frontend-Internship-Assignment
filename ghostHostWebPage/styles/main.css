@@ -1,17 +1,22 @@
 @import url('reset.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('./navigation.css');
 :root {
     --navi-height: 48px;
     --box-shadow: white 0px 10px 10px -10px;
     --dark-blue-btn-color: #21424A;
     --green-btn-color: #2FAC6C;
+    --light-gray: rgb(221, 221, 221);
+    --dark-gray: rgb(141, 141, 141);
 }
 
 html {
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    line-height: 1.4;
+}
 
 main {
     margin-top: var(--navi-height);
@@ -57,11 +62,69 @@ main .welcome {
 
 .welcome .login-btn {
     background-color: var(--dark-blue-btn-color);
-    clip-path: polygon(0% 0%, 100% 0, 95% 100%, 0% 100%);
+    clip-path: polygon(0% -100%, 100% 0, 95% 100%, 0% 100%);
 }
 
 .welcome .register-btn {
     background-color: var(--green-btn-color);
 }
 
+.about-us {
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+.about-us-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+.about-us-text {
+    color: var(--dark-gray);
+}
+
+.about-us .members-list {
+    margin: 3rem 0;
+}
+
+.about-us .member-list-item {
+    margin-bottom: 2rem;
+}
+
+.about-us .member-list-item .member-img {
+    border-radius: 50%;
+    border: 5px solid var(--light-gray);
+}
+
+.about-us .member-list-item .member-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.about-us .member-list-item .member-position {
+    font-weight: 500;
+    color: var(--dark-gray);
+    font-size: 1rem;
+    margin: 0.75rem;
+}
+
+.about-us .member-list-item i {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+}
+
+.about-us .member-list-item .icon {
+    margin-right: 0.75rem;
+}
+
+.about-us .member-list-item .icon:last-child {
+    margin-right: 0;
+}
+
+.about-us .member-list-item i:hover {
+    color: rgb(0, 162, 236);
+}
 
