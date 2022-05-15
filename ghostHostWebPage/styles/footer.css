@@ -2,10 +2,11 @@ footer {
     background-color: black;
     padding: var(--mobile-section-padding);
     color: var(--dark-gray);
+    text-align: center;
 }
 
-.footer-design {
-    text-align: center;
+footer hr {
+    border-top: 1px solid var(--dark-gray);
 }
 
 .footer-design-by {
@@ -17,9 +18,14 @@ footer {
     font-weight: 600;
 }
 
+.footer-nav {
+    margin: 3rem 0;
+}
+
 .footer-nav .nav-list-item {
     margin-bottom: 0.5rem;
 }
+
 
 .footer-nav .nav-list-item a {
     text-decoration: none;
@@ -35,7 +41,7 @@ footer {
 
 footer .footer-contacts {
     text-align: center;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
 footer .footer-contacts div {

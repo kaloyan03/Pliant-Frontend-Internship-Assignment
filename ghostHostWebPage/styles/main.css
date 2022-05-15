@@ -28,7 +28,7 @@ main {
 }
 
 
-main .welcome {
+.welcome {
     text-align: center;
     background-color: black;
     color: white;
@@ -38,7 +38,7 @@ main .welcome {
 .welcome .welcome-title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 0.40rem;
+    margin-bottom: 1rem;
 }
 
 .welcome .welcome-subtitle {
@@ -161,41 +161,73 @@ main .welcome {
     text-align: center;
 }
 
-.service .lighting-icon {
+.services-list-item .lighting-icon {
     color: white;
     background-color: #F1C40F;
 }
 
-.service .cloud-icon {
+.services-list-item .cloud-icon {
     color: white;
     background-color: #0EA7E6;
 }
 
-.service .arrows-icon {
+.services-list-item .arrows-icon {
     color: white;
     background-color: #95A5A6;
 }
 
-.service .comments-icon {
+.services-list-item .comments-icon {
     color: white;
     background-color: #F1540F;
 }
 
-.service i {
+.services-list-item i {
     font-size: 1.2rem;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
 
-.service .service-title {
+.services-list-item .service-title {
     font-weight: 600;
     font-size: 1.2rem;
     color: #333333;
     margin-bottom: 0.75rem;
 }
 
-.service .service-info {
+.services-list-item .service-info {
     color: var(--dark-gray);
     margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .welcome {
+        padding: 9rem 0 0 0;
+    }
+
+    .welcome-buttons {
+        margin-top: 10rem;
+    }
+    
+    .welcome-buttons .btn {
+    padding: 1.6rem 0.40rem;
+    font-size: 1.4rem;
+    }
+    
+
+    .about-us .members-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .services .services-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services .services-list-item {
+        flex: 1 0 45%;
+        margin: 1rem;
+    }
 }
