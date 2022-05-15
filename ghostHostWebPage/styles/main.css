@@ -6,8 +6,9 @@
     --box-shadow: white 0px 10px 10px -10px;
     --dark-blue-btn-color: #21424A;
     --green-btn-color: #2FAC6C;
-    --light-gray: rgb(221, 221, 221);
+    --light-gray: rgb(196, 196, 196);
     --dark-gray: rgb(141, 141, 141);
+    --mobile-section-padding: 1.5rem 2rem;
 }
 
 html {
@@ -128,3 +129,20 @@ main .welcome {
     color: rgb(0, 162, 236);
 }
 
+.reviews {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../assets/reviews-section-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: var(--mobile-section-padding);
+    color: white;
+    text-align: center;
+}
+
+.review .review-text {
+    color: var(--light-gray);
+}
+
+.review .review-member {
+    font-weight: 500;
+    margin: 1rem;
+}
