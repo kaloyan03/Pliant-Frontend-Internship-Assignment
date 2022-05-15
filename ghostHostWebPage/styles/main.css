@@ -1,0 +1,67 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('./navigation.css');
+:root {
+    --navi-height: 48px;
+    --box-shadow: white 0px 10px 10px -10px;
+    --dark-blue-btn-color: #21424A;
+    --green-btn-color: #2FAC6C;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+main {
+    margin-top: var(--navi-height);
+}
+
+
+main .welcome {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5rem 0 0 0;
+}
+
+.welcome .welcome-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.40rem;
+}
+
+.welcome .welcome-subtitle {
+    font-style: italic;
+    color: rgb(226, 226, 226);
+}
+
+.welcome .welcome-subtitle:first-of-type {
+    margin-bottom: 0.25rem;
+}
+
+.welcome-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+    background-color: var(--green-btn-color);
+}
+
+.welcome-buttons .btn {
+    color: white;
+    border: none;
+    padding: 1rem 0.40rem;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.welcome .login-btn {
+    background-color: var(--dark-blue-btn-color);
+    clip-path: polygon(0% 0%, 100% 0, 95% 100%, 0% 100%);
+}
+
+.welcome .register-btn {
+    background-color: var(--green-btn-color);
+}
+
+
