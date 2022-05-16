@@ -43,7 +43,7 @@
 
 .header .header-nav {
     position: absolute;
-    top: var(--navi-height);
+    top: var(--mobile-navi-height);
     left: 0;
     background-color: black;
     width: 100vw;
@@ -74,6 +74,62 @@
         border: 3px solid white;
         border-radius: 50%;
         padding: 0.45rem 0.7rem 0.4rem 0.7rem;
+    }
+
+    .header .header-nav {
+        position: absolute;
+        top: var(--navi-height);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        /* justify-content: space-between; */
+        align-items: baseline;
+    }
+
+    .header .mobile-menu-btn {
+        display: none;
+    }
+
+    .header .header-nav {
+        position: static;
+        overflow: visible;
+        max-height: 100%;
+        background-color: transparent;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: 5rem;
+        box-shadow: inset;
+        transition: none;
+    }
+
+    .header .nav-list-item a {
+        padding: 0.75rem;
+    }
+
+    .header .nav-list-item a:hover {
+        border-bottom: 2px solid white;
+        color: white;
+    }
+
+    .header {
+        box-shadow: none;
+    }
+
+    /* .header::after {
+        content: "";
+        position: absolute;
+        height: 185px;
+        top: 5rem;
+        left: 51%;
+        display: block;
+        border: 2px dashed var(--light-gray);
+    } */
+
+    .header .header-nav .nav-list-item {
+        display: inline-block;
+        margin-bottom: 0;
     }
 
 }
