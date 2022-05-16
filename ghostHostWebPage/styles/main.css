@@ -19,7 +19,7 @@ html {
 
 p {
     font-size: 1.2rem;
-    line-height: 1.4;
+    line-height: 1.5;
     word-break: break-word;
 }
 
@@ -32,11 +32,11 @@ main {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 5rem 0 0 0;
+    padding: 8rem 0 0 0;
 }
 
 .welcome .welcome-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -53,7 +53,7 @@ main {
 .welcome-buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 7rem;
+    margin-top: 10rem;
     background-color: var(--green-btn-color);
 }
 
@@ -61,7 +61,7 @@ main {
     color: white;
     border: none;
     padding: 1rem 0.40rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     width: 50%;
 }
 
@@ -82,7 +82,7 @@ main {
 .about-us-title {
     font-size: 1.4rem;
     font-weight: 600;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .about-us-title > span {
@@ -141,6 +141,7 @@ main {
     background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../assets/reviews-section-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     padding: var(--mobile-section-padding);
     color: white;
     text-align: center;
@@ -200,24 +201,30 @@ main {
     margin-bottom: 3rem;
 }
 
+@media screen and (min-width: 640px) {
+    .about-us .members-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about-us .members-list .member-list-item {
+        flex: 1;
+    }
+
+}
+
 @media screen and (min-width: 768px) {
     .welcome {
-        padding: 9rem 0 0 0;
+        padding: 12rem 0 0 0;
     }
 
     .welcome-buttons {
-        margin-top: 10rem;
+        margin-top: 14rem;
     }
     
     .welcome-buttons .btn {
     padding: 1.6rem 0.40rem;
     font-size: 1.4rem;
-    }
-    
-
-    .about-us .members-list {
-        display: flex;
-        justify-content: space-around;
     }
 
 
@@ -230,4 +237,47 @@ main {
         flex: 1 0 45%;
         margin: 1rem;
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .services .services-list-item {
+        flex: 1 0 20%;
+    }
+
+    .reviews {
+        padding: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .about-us {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .about-us .about-us-info {
+        width: 30%;
+        text-align: justify;
+    }
+
+    .about-us .members-list {
+        gap: 4rem;
+    }
+
+    .about-us .members-list .member-list-item {
+        flex: none;
+    }
+
+    .about-us-info::after {
+        content: "";
+        position: absolute;
+        height: 185px;
+        top: 5rem;
+        left: 51%;
+        display: block;
+        border: 2px dashed var(--light-gray);
+    }
+
 }
