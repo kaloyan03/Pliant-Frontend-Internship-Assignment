@@ -248,9 +248,6 @@ main {
     .services .services-list-item {
         flex: 1 0 20%;
     }
-
-    .testimonials {
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -278,9 +275,33 @@ main {
         position: absolute;
         height: 185px;
         top: 5rem;
-        left: 51%;
+        left: 48%;
         display: block;
         border: 2px dashed var(--light-gray);
     }
 
 }
+
+/* @media screen and (min-width: 1500px) {
+    .about-us-info::after {
+        content: "";
+        position: absolute;
+        height: 185px;
+        top: 5rem;
+        left: 51%;
+        display: block;
+        border: 2px dashed var(--light-gray);
+    }
+}
+
+@media screen and (min-width: 1300x) {
+    .about-us-info::after {
+        content: "";
+        position: absolute;
+        height: 185px;
+        top: 5rem;
+        left: 50%;
+        display: block;
+        border: 2px dashed var(--light-gray);
+    }
+} */
