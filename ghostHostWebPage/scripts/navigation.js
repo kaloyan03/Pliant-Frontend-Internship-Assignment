@@ -11,4 +11,4 @@ function showMobileNav() {
     })
 }
 
-showMobileNav();
+export default showMobileNav;

@@ -70,4 +70,8 @@ footer .footer-contacts div {
     .footer-nav {
         margin-left: 8rem;
     }
+
+    .footer-nav .nav-list-item:hover {
+        color: white;
+    }
 }

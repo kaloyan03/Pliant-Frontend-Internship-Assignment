@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('./navigation.css');
 @import url('./footer.css');
+@import url('./carousel.css');
 
 :root {
     --mobile-navi-height: 48px;
@@ -142,17 +143,16 @@ main {
     color: rgb(0, 162, 236);
 }
 
-.reviews {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../assets/reviews-section-background.jpg');
+.testimonials {
+    /* background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../assets/reviews-section-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    padding: var(--mobile-section-padding);
+    background-position: center; */
     color: white;
     text-align: center;
 }
 
-.review .review-text {
+.testimonials .review-text {
     color: var(--light-gray);
 }
 
@@ -249,10 +249,8 @@ main {
         flex: 1 0 20%;
     }
 
-    .reviews {
-        padding: 3rem;
+    .testimonials {
     }
-
 }
 
 @media screen and (min-width: 1200px) {

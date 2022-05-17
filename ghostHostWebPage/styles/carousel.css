@@ -1,0 +1,97 @@
+.testimonials .img-container {
+    display: flex;
+    width: 300%;
+    transition: all 0.5s ease-in-out;
+}
+
+.testimonials .carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container #first-image {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../assets/testimonials-section-background-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-container #second-image {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../assets/testimonials-section-background-2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-container #third-image {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../assets/testimonials-section-background-3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-container .img {  
+    width: 100%;
+    padding: 5rem;
+}
+
+.img-container.first-active {
+    margin-left: 0;
+}
+
+.img-container.second-active {
+    margin-left: -100%;
+}
+
+.img-container.third-active {
+    margin-left: -200%;
+}
+
+.dots {
+    position: absolute; 
+    bottom: 40px;
+    display: flex;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    height: 10px;
+    margin-right: 0.5rem;
+    width: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+.dots.first-current #first-dot {
+    background-color: white;
+}
+
+.dots.second-current #second-dot {
+    background-color: white;
+}
+
+.dots.third-current #third-dot {
+    background-color: white;
+}
+
+.dots #review-member {
+    font-weight: 600;
+    width: 100px;
+    margin-right: 0.5rem;
+}
+
+#review-member::after {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    top: 0;
+    left: 57%;
+    display: block;
+    border: 1px solid var(--dark-gray);
+}
