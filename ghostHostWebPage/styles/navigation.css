@@ -106,10 +106,12 @@
 
     .header .nav-list-item a {
         padding: 0.75rem;
+        z-index: 3;
+    position: relative;
     }
 
     .header .nav-list-item a:hover {
-        border-bottom: 2px solid white;
+        border-bottom: 1px solid white;
         color: white;
     }
 
@@ -117,15 +119,14 @@
         box-shadow: none;
     }
 
-    /* .header::after {
+    .header::after {
         content: "";
-        position: absolute;
-        height: 185px;
-        top: 5rem;
-        left: 51%;
-        display: block;
-        border: 2px dashed var(--light-gray);
-    } */
+    position: absolute;
+    top: 63px;
+    width: 92%;
+    display: block;
+    border: 1px solid #3d3d3d;
+    }
 
     .header .header-nav .nav-list-item {
         display: inline-block;

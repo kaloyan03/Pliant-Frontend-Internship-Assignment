@@ -220,11 +220,11 @@ main {
 
 @media screen and (min-width: 768px) {
     .welcome {
-        padding: 12rem 0 0 0;
+        padding: 14rem 0 0 0;
     }
 
     .welcome-buttons {
-        margin-top: 14rem;
+        margin-top: 18rem;
     }
     
     .welcome-buttons .btn {
@@ -262,6 +262,12 @@ main {
         text-align: justify;
     }
 
+    .about-us .about-us-info .about-us-text {
+        width: 400px;
+        text-align: justify;
+    }
+
+
     .about-us .members-list {
         gap: 4rem;
     }
@@ -275,7 +281,7 @@ main {
         position: absolute;
         height: 185px;
         top: 5rem;
-        left: 48%;
+        left: 47%;
         display: block;
         border: 2px dashed var(--light-gray);
     }
