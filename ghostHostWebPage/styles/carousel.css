@@ -9,45 +9,45 @@
     overflow: hidden;
 }
 
-.img-container #first-image {
+.carousel-container .img-container #first-image {
     background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../assets/testimonials-section-background-1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.img-container #second-image {
+.carousel-container .img-container #second-image {
     background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../assets/testimonials-section-background-2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.img-container #third-image {
+.carousel-container .img-container #third-image {
     background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url('../assets/testimonials-section-background-3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.img-container .img {  
+.carousel-container .img-container .img {  
     width: 100%;
     padding: 5rem;
 }
 
-.img-container.first-active {
+.carousel-container .img-container.first-active {
     margin-left: 0;
 }
 
-.img-container.second-active {
+.carousel-container .img-container.second-active {
     margin-left: -100%;
 }
 
-.img-container.third-active {
+.carousel-container .img-container.third-active {
     margin-left: -200%;
 }
 
-.dots {
+.carousel-container .dots {
     position: absolute; 
     bottom: 40px;
     display: flex;
@@ -56,7 +56,7 @@
     transform: translateX(-50%);
 }
 
-.dot {
+.carousel-container .dot {
     height: 10px;
     margin-right: 0.5rem;
     width: 10px;
@@ -64,29 +64,29 @@
     border-radius: 50%;
 }
 
-.dot:hover {
+.carousel-container .dot:hover {
     cursor: pointer;
 }
 
-.dots.first-current #first-dot {
+.carousel-container .dots.first-current #first-dot {
     background-color: white;
 }
 
-.dots.second-current #second-dot {
+.carousel-container .dots.second-current #second-dot {
     background-color: white;
 }
 
-.dots.third-current #third-dot {
+.carousel-container .dots.third-current #third-dot {
     background-color: white;
 }
 
-.dots #review-member {
+.carousel-container .dots #review-member {
     font-weight: 600;
     width: 100px;
     margin-right: 0.5rem;
 }
 
-#review-member::after {
+.carousel-container #review-member::after {
     content: "";
     position: absolute;
     height: 1rem;
